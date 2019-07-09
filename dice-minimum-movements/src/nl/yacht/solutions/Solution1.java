@@ -9,7 +9,7 @@ public class Solution1 {
     public static int solution(int[] A) {
     	int oppositPairs = 0;
     	List<Integer> integersList = Arrays.stream(A).boxed().collect(Collectors.toList());
-    	int listSize = integersList.size();
+    	int listSize = integersList.size();	
     	if(listSize % 2 == 0) {
     		if(integersList.contains(1) && integersList.contains(6)) {
     			oppositPairs++;
@@ -20,7 +20,7 @@ public class Solution1 {
     		if(integersList.contains(3) && integersList.contains(4)) {
     			oppositPairs++;
     		}
-    		if(oppositPairs == listSize) {
+    		if(oppositPairs == (listSize/2)) {
     			return listSize;
     		}
     	}
