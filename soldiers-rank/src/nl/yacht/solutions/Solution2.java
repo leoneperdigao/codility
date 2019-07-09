@@ -15,6 +15,5 @@ public class Solution2 {
      		}
      	}
      	return soldiers;
-    	
     }
 }
