@@ -11,10 +11,10 @@ public class Solution3 {
             n /= 2;
             l++;
         }
-        for (p = 1; p <= (l/2); ++p) { //need to be minor then length/2
+        for(p = l/2; p >0; p--){
             int i;
             boolean ok = true;
-            for (i = 0; i < l - p; ++i) {
+            for(i = 0; i < (l - l/2); i++){
                 if (d[i] != d[i + p]) {
                     ok = false;
                     break;
